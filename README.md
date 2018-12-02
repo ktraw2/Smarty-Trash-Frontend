@@ -1,5 +1,5 @@
-### Smarty-Trash-Frontend
-# A smart trash can connected to a mobile app that displays disposal statistics and trash levels, in order to encourage citizens to be more conscious of their actions and to promote sustainable living. This is the fronend code.
+# Smarty-Trash-Frontend
+## A smart trash can connected to a mobile app that displays disposal statistics and trash levels, in order to encourage citizens to be more conscious of their actions and to promote sustainable living. This is the fronend code.
 
 ## App Walk Through
 <a href="https://imgflip.com/gif/2o00ah"><img src="https://i.imgflip.com/2o00ah.gif" title="made at imgflip.com"/></a>

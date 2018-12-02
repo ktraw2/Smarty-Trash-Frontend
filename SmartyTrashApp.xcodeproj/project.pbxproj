@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		407DBCFC6AC8FBC95401FAB8 /* Pods_SmartyTrashApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7016EDEB349EF1D87F534EF /* Pods_SmartyTrashApp.framework */; };
+		4430BC4521B3936D000E4E0D /* StatisticsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4430BC4421B3936D000E4E0D /* StatisticsNavigationController.swift */; };
+		448658BB21AE602A002BD8F1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448658BA21AE602A002BD8F1 /* HomeViewController.swift */; };
+		448658BD21AE6A85002BD8F1 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448658BC21AE6A85002BD8F1 /* StatisticsViewController.swift */; };
+		448658BF21AE776A002BD8F1 /* FactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448658BE21AE776A002BD8F1 /* FactViewController.swift */; };
+		448658C121AF84E8002BD8F1 /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448658C021AF84E8002BD8F1 /* ConnectViewController.swift */; };
+		44A44C4B21B238B8009C94B0 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A44C4A21B238B8009C94B0 /* MainTabBarController.swift */; };
+		44A44C4D21B238CF009C94B0 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A44C4C21B238CF009C94B0 /* HomeNavigationController.swift */; };
+		44A44C4F21B25627009C94B0 /* StatusNavigationController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A44C4E21B25627009C94B0 /* StatusNavigationController .swift */; };
 		44BB159D21A90C8F0035B33C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB159C21A90C8F0035B33C /* AppDelegate.swift */; };
 		44BB159F21A90C8F0035B33C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB159E21A90C8F0035B33C /* FirstViewController.swift */; };
 		44BB15A121A90C8F0035B33C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB15A021A90C8F0035B33C /* SecondViewController.swift */; };
@@ -15,6 +24,9 @@
 		44BB15A921A90C920035B33C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BB15A721A90C920035B33C /* LaunchScreen.storyboard */; };
 		44BB15B421A90C930035B33C /* SmartyTrashAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB15B321A90C930035B33C /* SmartyTrashAppTests.swift */; };
 		44BB15BF21A90C930035B33C /* SmartyTrashAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB15BE21A90C930035B33C /* SmartyTrashAppUITests.swift */; };
+		44F46BBF21ACF48900DCB3AC /* trashLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F46BBE21ACF48900DCB3AC /* trashLevelView.swift */; };
+		B7F204CF27DC7D203FF5F00C /* Pods_SmartyTrashAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 811FC9D233F3407C85C722CE /* Pods_SmartyTrashAppTests.framework */; };
+		D687AFE69F3334AED43E6513 /* Pods_SmartyTrashAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B498E8CF1E0CE784561DFB7 /* Pods_SmartyTrashAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0864C3EEA946CE208CAE797E /* Pods-SmartyTrashAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartyTrashAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartyTrashAppTests/Pods-SmartyTrashAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4430BC4421B3936D000E4E0D /* StatisticsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsNavigationController.swift; sourceTree = "<group>"; };
+		448658BA21AE602A002BD8F1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		448658BC21AE6A85002BD8F1 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		448658BE21AE776A002BD8F1 /* FactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactViewController.swift; sourceTree = "<group>"; };
+		448658C021AF84E8002BD8F1 /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		44A44C4A21B238B8009C94B0 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		44A44C4C21B238CF009C94B0 /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
+		44A44C4E21B25627009C94B0 /* StatusNavigationController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatusNavigationController .swift"; sourceTree = "<group>"; };
 		44BB159921A90C8F0035B33C /* SmartyTrashApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartyTrashApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BB159C21A90C8F0035B33C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44BB159E21A90C8F0035B33C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +70,15 @@
 		44BB15BA21A90C930035B33C /* SmartyTrashAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartyTrashAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BB15BE21A90C930035B33C /* SmartyTrashAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartyTrashAppUITests.swift; sourceTree = "<group>"; };
 		44BB15C021A90C930035B33C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44F46BBE21ACF48900DCB3AC /* trashLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trashLevelView.swift; sourceTree = "<group>"; };
+		4F3CE2F03B9B13B71A295FAF /* Pods-SmartyTrashApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartyTrashApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartyTrashApp/Pods-SmartyTrashApp.release.xcconfig"; sourceTree = "<group>"; };
+		5B498E8CF1E0CE784561DFB7 /* Pods_SmartyTrashAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartyTrashAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		811FC9D233F3407C85C722CE /* Pods_SmartyTrashAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartyTrashAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86BA3909D3224B69642AFE64 /* Pods-SmartyTrashAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartyTrashAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartyTrashAppUITests/Pods-SmartyTrashAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8730CA8E97073D7C22482774 /* Pods-SmartyTrashAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartyTrashAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartyTrashAppTests/Pods-SmartyTrashAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		A738405CC5E41F9674232F39 /* Pods-SmartyTrashApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartyTrashApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartyTrashApp/Pods-SmartyTrashApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CC59B26518F6494E471F487D /* Pods-SmartyTrashAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartyTrashAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartyTrashAppUITests/Pods-SmartyTrashAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7016EDEB349EF1D87F534EF /* Pods_SmartyTrashApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartyTrashApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407DBCFC6AC8FBC95401FAB8 /* Pods_SmartyTrashApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F204CF27DC7D203FF5F00C /* Pods_SmartyTrashAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D687AFE69F3334AED43E6513 /* Pods_SmartyTrashAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +116,8 @@
 				44BB15B221A90C930035B33C /* SmartyTrashAppTests */,
 				44BB15BD21A90C930035B33C /* SmartyTrashAppUITests */,
 				44BB159A21A90C8F0035B33C /* Products */,
+				FF2F5F6D8FA6AC26F591BE3B /* Pods */,
+				8CEEC66F5394377C364A1D90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +141,15 @@
 				44BB15A521A90C920035B33C /* Assets.xcassets */,
 				44BB15A721A90C920035B33C /* LaunchScreen.storyboard */,
 				44BB15AA21A90C920035B33C /* Info.plist */,
+				44F46BBE21ACF48900DCB3AC /* trashLevelView.swift */,
+				448658BA21AE602A002BD8F1 /* HomeViewController.swift */,
+				448658BC21AE6A85002BD8F1 /* StatisticsViewController.swift */,
+				448658BE21AE776A002BD8F1 /* FactViewController.swift */,
+				448658C021AF84E8002BD8F1 /* ConnectViewController.swift */,
+				44A44C4A21B238B8009C94B0 /* MainTabBarController.swift */,
+				44A44C4C21B238CF009C94B0 /* HomeNavigationController.swift */,
+				44A44C4E21B25627009C94B0 /* StatusNavigationController .swift */,
+				4430BC4421B3936D000E4E0D /* StatisticsNavigationController.swift */,
 			);
 			path = SmartyTrashApp;
 			sourceTree = "<group>";
@@ -128,6 +172,29 @@
 			path = SmartyTrashAppUITests;
 			sourceTree = "<group>";
 		};
+		8CEEC66F5394377C364A1D90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7016EDEB349EF1D87F534EF /* Pods_SmartyTrashApp.framework */,
+				811FC9D233F3407C85C722CE /* Pods_SmartyTrashAppTests.framework */,
+				5B498E8CF1E0CE784561DFB7 /* Pods_SmartyTrashAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF2F5F6D8FA6AC26F591BE3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A738405CC5E41F9674232F39 /* Pods-SmartyTrashApp.debug.xcconfig */,
+				4F3CE2F03B9B13B71A295FAF /* Pods-SmartyTrashApp.release.xcconfig */,
+				0864C3EEA946CE208CAE797E /* Pods-SmartyTrashAppTests.debug.xcconfig */,
+				8730CA8E97073D7C22482774 /* Pods-SmartyTrashAppTests.release.xcconfig */,
+				CC59B26518F6494E471F487D /* Pods-SmartyTrashAppUITests.debug.xcconfig */,
+				86BA3909D3224B69642AFE64 /* Pods-SmartyTrashAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44BB15C321A90C930035B33C /* Build configuration list for PBXNativeTarget "SmartyTrashApp" */;
 			buildPhases = (
+				B6256E6F1BF8B705FE4B86F3 /* [CP] Check Pods Manifest.lock */,
 				44BB159521A90C8F0035B33C /* Sources */,
 				44BB159621A90C8F0035B33C /* Frameworks */,
 				44BB159721A90C8F0035B33C /* Resources */,
+				4F89C4A2AFBACA3206E4731E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44BB15C621A90C930035B33C /* Build configuration list for PBXNativeTarget "SmartyTrashAppTests" */;
 			buildPhases = (
+				E4B5832CA199BDD400D6CDF3 /* [CP] Check Pods Manifest.lock */,
 				44BB15AB21A90C930035B33C /* Sources */,
 				44BB15AC21A90C930035B33C /* Frameworks */,
 				44BB15AD21A90C930035B33C /* Resources */,
@@ -170,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44BB15C921A90C930035B33C /* Build configuration list for PBXNativeTarget "SmartyTrashAppUITests" */;
 			buildPhases = (
+				D3D5F2D87CA29CDFB33E2357 /* [CP] Check Pods Manifest.lock */,
 				44BB15B621A90C930035B33C /* Sources */,
 				44BB15B721A90C930035B33C /* Frameworks */,
 				44BB15B821A90C930035B33C /* Resources */,
@@ -254,14 +325,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F89C4A2AFBACA3206E4731E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SmartyTrashApp/Pods-SmartyTrashApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartyTrashApp/Pods-SmartyTrashApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6256E6F1BF8B705FE4B86F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartyTrashApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3D5F2D87CA29CDFB33E2357 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartyTrashAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4B5832CA199BDD400D6CDF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartyTrashAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		44BB159521A90C8F0035B33C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A44C4F21B25627009C94B0 /* StatusNavigationController .swift in Sources */,
+				44A44C4D21B238CF009C94B0 /* HomeNavigationController.swift in Sources */,
+				448658BB21AE602A002BD8F1 /* HomeViewController.swift in Sources */,
+				44F46BBF21ACF48900DCB3AC /* trashLevelView.swift in Sources */,
+				44A44C4B21B238B8009C94B0 /* MainTabBarController.swift in Sources */,
 				44BB15A121A90C8F0035B33C /* SecondViewController.swift in Sources */,
+				4430BC4521B3936D000E4E0D /* StatisticsNavigationController.swift in Sources */,
+				448658BD21AE6A85002BD8F1 /* StatisticsViewController.swift in Sources */,
 				44BB159D21A90C8F0035B33C /* AppDelegate.swift in Sources */,
 				44BB159F21A90C8F0035B33C /* FirstViewController.swift in Sources */,
+				448658BF21AE776A002BD8F1 /* FactViewController.swift in Sources */,
+				448658C121AF84E8002BD8F1 /* ConnectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,9 +593,11 @@
 		};
 		44BB15C421A90C930035B33C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A738405CC5E41F9674232F39 /* Pods-SmartyTrashApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQKC5W95K5;
 				INFOPLIST_FILE = SmartyTrashApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,9 +612,11 @@
 		};
 		44BB15C521A90C930035B33C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F3CE2F03B9B13B71A295FAF /* Pods-SmartyTrashApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQKC5W95K5;
 				INFOPLIST_FILE = SmartyTrashApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +631,7 @@
 		};
 		44BB15C721A90C930035B33C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0864C3EEA946CE208CAE797E /* Pods-SmartyTrashAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +652,7 @@
 		};
 		44BB15C821A90C930035B33C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8730CA8E97073D7C22482774 /* Pods-SmartyTrashAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +673,7 @@
 		};
 		44BB15CA21A90C930035B33C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC59B26518F6494E471F487D /* Pods-SmartyTrashAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +693,7 @@
 		};
 		44BB15CB21A90C930035B33C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86BA3909D3224B69642AFE64 /* Pods-SmartyTrashAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

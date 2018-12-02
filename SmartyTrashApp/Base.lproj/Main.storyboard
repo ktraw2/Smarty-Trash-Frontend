@@ -1,102 +1,477 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A278a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Iym-gq-5AH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--First View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="SmartyTrashApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehK-uZ-9Do">
+                                <rect key="frame" x="0.0" y="79" width="375" height="7"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="g4x-3t-R6H"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Status" id="Eb6-LV-FOf"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5v-Uj-PLN" customClass="trashLevelView" customModule="SmartyTrashApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="175" width="339" height="99"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trash Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3U-44-cdd">
+                                        <rect key="frame" x="17" y="8" width="91" height="22"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Kp8-Hn-LvI">
+                                        <rect key="frame" x="92" y="57" width="159" height="2"/>
+                                    </progressView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="a3U-44-cdd" firstAttribute="leading" secondItem="i5v-Uj-PLN" secondAttribute="leading" constant="17" id="CqC-hr-fDO"/>
+                                    <constraint firstItem="a3U-44-cdd" firstAttribute="top" secondItem="i5v-Uj-PLN" secondAttribute="topMargin" id="EIG-iE-Rvv"/>
+                                    <constraint firstItem="Kp8-Hn-LvI" firstAttribute="centerX" secondItem="i5v-Uj-PLN" secondAttribute="centerX" constant="2" id="Mdv-Ho-Era"/>
+                                    <constraint firstItem="Kp8-Hn-LvI" firstAttribute="top" secondItem="a3U-44-cdd" secondAttribute="bottom" constant="27" id="N7R-0d-DUK"/>
+                                    <constraint firstItem="Kp8-Hn-LvI" firstAttribute="leading" secondItem="i5v-Uj-PLN" secondAttribute="leading" constant="92" id="ShO-eD-0hy"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="a3U-44-cdd" secondAttribute="trailing" constant="20" symbolic="YES" id="dzY-nU-0fv"/>
+                                    <constraint firstAttribute="height" constant="99" id="jVi-Pj-fXg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pef-HN-Afv" customClass="trashLevelView" customModule="SmartyTrashApp" customModuleProvider="target">
+                                <rect key="frame" x="21" y="289" width="337" height="319"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kD-6A-ErY">
+                                        <rect key="frame" x="26" y="33" width="69" height="22"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trash Count:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0x1-ej-Izm">
+                                        <rect key="frame" x="39" y="88" width="89" height="19"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJe-mU-19V">
+                                        <rect key="frame" x="219" y="88" width="39" height="19"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9h-e9-SAq">
+                                        <rect key="frame" x="216" y="182" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Number of Times Trash has been filled : " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Px1-mQ-Ged">
+                                        <rect key="frame" x="39" y="131" width="169" height="106"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="106" id="ZxQ-fz-iP9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="G9h-e9-SAq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nJe-mU-19V" secondAttribute="leading" id="4jd-2Y-hT8"/>
+                                    <constraint firstItem="G9h-e9-SAq" firstAttribute="top" secondItem="nJe-mU-19V" secondAttribute="bottom" constant="75" id="CiN-eu-Nko"/>
+                                    <constraint firstItem="nJe-mU-19V" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0x1-ej-Izm" secondAttribute="trailing" constant="8" symbolic="YES" id="IL0-5Z-xkI"/>
+                                    <constraint firstItem="0x1-ej-Izm" firstAttribute="centerY" secondItem="nJe-mU-19V" secondAttribute="centerY" id="Jet-rN-eCc"/>
+                                    <constraint firstItem="0x1-ej-Izm" firstAttribute="leading" secondItem="pef-HN-Afv" secondAttribute="leading" constant="39" id="P8B-gX-wGI"/>
+                                    <constraint firstItem="G9h-e9-SAq" firstAttribute="leading" secondItem="Px1-mQ-Ged" secondAttribute="trailing" constant="8" symbolic="YES" id="fMj-QB-qkF"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5kD-6A-ErY" secondAttribute="trailing" constant="20" symbolic="YES" id="lkA-de-lYH"/>
+                                    <constraint firstItem="Px1-mQ-Ged" firstAttribute="top" secondItem="0x1-ej-Izm" secondAttribute="bottom" constant="24" id="nif-cF-sU0"/>
+                                    <constraint firstItem="5kD-6A-ErY" firstAttribute="leading" secondItem="pef-HN-Afv" secondAttribute="leading" constant="26" id="rk7-xN-gMu"/>
+                                    <constraint firstAttribute="trailing" secondItem="nJe-mU-19V" secondAttribute="trailing" constant="79" id="sNe-mZ-WcY"/>
+                                    <constraint firstAttribute="trailing" secondItem="G9h-e9-SAq" secondAttribute="trailing" constant="79" id="taY-v9-6pC"/>
+                                    <constraint firstItem="G9h-e9-SAq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Px1-mQ-Ged" secondAttribute="trailing" constant="8" symbolic="YES" id="tvY-fd-h6n"/>
+                                    <constraint firstItem="Px1-mQ-Ged" firstAttribute="leading" secondItem="0x1-ej-Izm" secondAttribute="leading" id="vju-aW-IEe"/>
+                                    <constraint firstItem="5kD-6A-ErY" firstAttribute="top" secondItem="pef-HN-Afv" secondAttribute="top" constant="33" id="zbj-dc-yps"/>
+                                    <constraint firstItem="0x1-ej-Izm" firstAttribute="top" secondItem="5kD-6A-ErY" secondAttribute="bottom" constant="33" id="zcd-gi-UPV"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.50980392156862742" green="0.80000000000000004" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="i5v-Uj-PLN" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="6Rz-IM-P8u"/>
+                            <constraint firstItem="i5v-Uj-PLN" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="175" id="8De-Xy-WsX"/>
+                            <constraint firstItem="pef-HN-Afv" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="21" id="Eau-c7-aF4"/>
+                            <constraint firstItem="i5v-Uj-PLN" firstAttribute="top" secondItem="ehK-uZ-9Do" secondAttribute="bottom" constant="89" id="HOO-uc-IoC"/>
+                            <constraint firstItem="ehK-uZ-9Do" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="MoL-nz-SVW"/>
+                            <constraint firstItem="i5v-Uj-PLN" firstAttribute="leading" secondItem="pef-HN-Afv" secondAttribute="leading" constant="-1" id="Uln-gv-fJr"/>
+                            <constraint firstItem="i5v-Uj-PLN" firstAttribute="trailing" secondItem="pef-HN-Afv" secondAttribute="trailing" constant="1" id="bPl-d4-L4l"/>
+                            <constraint firstItem="ehK-uZ-9Do" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="i5s-JC-x94"/>
+                            <constraint firstItem="ehK-uZ-9Do" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="15" id="uIA-Vt-WSo"/>
+                            <constraint firstItem="pef-HN-Afv" firstAttribute="top" secondItem="i5v-Uj-PLN" secondAttribute="bottom" constant="15" id="vd0-wD-WdO"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="pef-HN-Afv" secondAttribute="bottom" constant="10" id="wrZ-s3-nbB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="Eas-Is-Edd"/>
+                    <connections>
+                        <outlet property="hostAdd" destination="nJe-mU-19V" id="rcN-OF-RAH"/>
+                        <outlet property="magnetometerData" destination="nJe-mU-19V" id="skH-M7-pPb"/>
+                        <outlet property="numTimesTrashFull" destination="G9h-e9-SAq" id="tt2-BF-Jqf"/>
+                        <outlet property="trashLevel" destination="Kp8-Hn-LvI" id="QSH-U0-soN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="1688.8" y="-320.68965517241384"/>
         </scene>
-        <!--Second-->
+        <!--Facts-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="FactViewController" customModule="SmartyTrashApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iud-ul-kh5">
+                                <rect key="frame" x="0.0" y="35" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="mGy-kv-smp"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Facts" id="Aaz-my-uHt"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSz-71-LDJ" customClass="trashLevelView" customModule="SmartyTrashApp" customModuleProvider="target">
+                                <rect key="frame" x="8" y="148" width="359" height="288"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="18" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DB6-xU-AD2">
+                                        <rect key="frame" x="44" y="16" width="284" height="249"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="249" id="mYh-Mc-NAJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="cml-fT-h2f" appends="YES" id="uor-Zk-1yj"/>
+                                        </connections>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="DB6-xU-AD2" firstAttribute="leading" secondItem="nSz-71-LDJ" secondAttribute="leading" constant="44" id="4SB-Xl-3ov"/>
+                                    <constraint firstItem="DB6-xU-AD2" firstAttribute="centerX" secondItem="nSz-71-LDJ" secondAttribute="centerX" constant="6.5" id="E4V-Oa-Rky"/>
+                                    <constraint firstItem="DB6-xU-AD2" firstAttribute="top" secondItem="nSz-71-LDJ" secondAttribute="top" constant="16" id="ZIc-sr-jBI"/>
+                                    <constraint firstAttribute="height" constant="288" id="pXa-Xg-r3g"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.50980392156862742" green="0.80000000000000004" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="nSz-71-LDJ" firstAttribute="top" secondItem="Iud-ul-kh5" secondAttribute="bottom" constant="69" id="BOr-cC-OAp"/>
+                            <constraint firstItem="Iud-ul-kh5" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="15" id="BPp-Cf-jAP"/>
+                            <constraint firstItem="Iud-ul-kh5" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="LGU-10-knT"/>
+                            <constraint firstItem="nSz-71-LDJ" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="8" id="XV6-73-hTl"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="nSz-71-LDJ" secondAttribute="trailing" constant="8" id="oOg-b9-AQB"/>
+                            <constraint firstItem="Iud-ul-kh5" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="wOR-zL-ZYq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Facts" image="about" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="factLabel" destination="DB6-xU-AD2" id="syp-c6-lgD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cml-fT-h2f">
+                    <connections>
+                        <action selector="action_Tapped:" destination="8rJ-Kc-sve" id="qOp-ba-3Qk"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Statistics View Controller-->
+        <scene sceneID="fNf-VF-947">
+            <objects>
+                <viewController id="4Xt-ZF-AwN" customClass="StatisticsViewController" customModule="SmartyTrashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eNA-33-SGB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3a2-Mk-cjl">
+                                <rect key="frame" x="0.0" y="79" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Statistics" id="ubw-U9-nke"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHI-NS-URb" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="8" y="145" width="359" height="303"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="303" id="Y80-Hk-rsn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50980392159999999" green="0.80000000000000004" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QHI-NS-URb" firstAttribute="leading" secondItem="Tn4-ta-DNS" secondAttribute="leading" constant="8" id="3dL-8h-vvg"/>
+                            <constraint firstItem="Tn4-ta-DNS" firstAttribute="trailing" secondItem="QHI-NS-URb" secondAttribute="trailing" constant="8" id="D3t-hp-mBG"/>
+                            <constraint firstItem="3a2-Mk-cjl" firstAttribute="top" secondItem="Tn4-ta-DNS" secondAttribute="top" constant="15" id="F5s-te-NJR"/>
+                            <constraint firstItem="QHI-NS-URb" firstAttribute="top" secondItem="3a2-Mk-cjl" secondAttribute="bottom" constant="22" id="SP8-Cm-e04"/>
+                            <constraint firstItem="3a2-Mk-cjl" firstAttribute="leading" secondItem="eNA-33-SGB" secondAttribute="leading" id="dfR-kB-wQ3"/>
+                            <constraint firstItem="3a2-Mk-cjl" firstAttribute="centerX" secondItem="QHI-NS-URb" secondAttribute="centerX" id="eJ2-7s-x94"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tn4-ta-DNS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aH1-7Z-k5W"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="lineChartView" destination="QHI-NS-URb" id="CIz-lv-nRl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lCE-Hn-Fw4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1679.2" y="1026.8365817091455"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="DGa-3X-X33">
+            <objects>
+                <viewController id="Fdb-C7-09v" customClass="HomeViewController" customModule="SmartyTrashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d6C-lf-ysb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33s-ob-qwQ" customClass="trashLevelView" customModule="SmartyTrashApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="163" width="343" height="194"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0S-Z0-B32">
+                                        <rect key="frame" x="21" y="-27" width="314" height="248"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="248" id="Ecf-76-UmZ"/>
+                                        </constraints>
+                                        <string key="text">Welcome to Smarty Trash, your own, personalized trash monitoring system! Here at Smarty Trash, we send you statistics on your trashiness (towards the planet) and feed you with sustainable tips to help you become more aware of your impact on the environment! No more trash-talking, we got it covered.</string>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="H0S-Z0-B32" firstAttribute="centerY" secondItem="33s-ob-qwQ" secondAttribute="centerY" id="6AG-8K-QsC"/>
+                                    <constraint firstItem="H0S-Z0-B32" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="33s-ob-qwQ" secondAttribute="leading" constant="20" symbolic="YES" id="8wv-bz-9Kv"/>
+                                    <constraint firstItem="H0S-Z0-B32" firstAttribute="trailing" secondItem="33s-ob-qwQ" secondAttribute="trailingMargin" id="K4P-BD-Axs"/>
+                                    <constraint firstItem="H0S-Z0-B32" firstAttribute="top" secondItem="33s-ob-qwQ" secondAttribute="top" constant="-27" id="SZG-dr-jzT"/>
+                                </constraints>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYO-7I-5li">
+                                <rect key="frame" x="0.0" y="79" width="375" height="17"/>
+                                <items>
+                                    <navigationItem title="Smarty Trash" largeTitleDisplayMode="always" id="qrn-CO-1bg"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50980392156862742" green="0.80000000000000004" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="33s-ob-qwQ" firstAttribute="leading" secondItem="yOP-Mp-Eim" secondAttribute="leading" constant="16" id="0eX-yN-bmt"/>
+                            <constraint firstItem="33s-ob-qwQ" firstAttribute="top" secondItem="aYO-7I-5li" secondAttribute="bottom" constant="67" id="G7V-8Y-dFk"/>
+                            <constraint firstItem="yOP-Mp-Eim" firstAttribute="trailing" secondItem="33s-ob-qwQ" secondAttribute="trailing" constant="16" id="UWm-x4-1f7"/>
+                            <constraint firstItem="aYO-7I-5li" firstAttribute="top" secondItem="yOP-Mp-Eim" secondAttribute="top" constant="15" id="Xv6-8d-OB1"/>
+                            <constraint firstItem="aYO-7I-5li" firstAttribute="leading" secondItem="d6C-lf-ysb" secondAttribute="leading" id="bbw-DM-zyE"/>
+                            <constraint firstItem="aYO-7I-5li" firstAttribute="centerX" secondItem="33s-ob-qwQ" secondAttribute="centerX" id="hG1-N7-nH2"/>
+                            <constraint firstItem="yOP-Mp-Eim" firstAttribute="bottom" secondItem="33s-ob-qwQ" secondAttribute="bottom" constant="261" id="kRy-9t-UhD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yOP-Mp-Eim"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7sU-e9-N5G">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="m0V-Dp-78I">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UBi-97-zp4">
+                                <rect key="frame" x="281" y="7" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Disconnect">
+                                    <color key="titleColor" red="0.020182291670000001" green="0.010203134839999999" blue="0.016202503060000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="disconnect:" destination="Fdb-C7-09v" eventType="touchUpInside" id="CYG-CQ-lua"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kc2-2R-8hL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3407.1999999999998" y="-6.746626686656672"/>
+        </scene>
+        <!--Connect View Controller-->
+        <scene sceneID="M6J-2D-VdP">
+            <objects>
+                <viewController id="Iym-gq-5AH" customClass="ConnectViewController" customModule="SmartyTrashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oy5-v7-W32">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yI3-DG-tGH">
+                                <rect key="frame" x="79" y="375" width="216" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="G1z-DP-66d"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Smarty Trash" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbE-bN-CLr">
+                                <rect key="frame" x="45" y="126" width="284" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="mfO-xw-SWg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f22-6F-Tiq">
+                                <rect key="frame" x="144" y="426" width="86" height="30"/>
+                                <state key="normal" title="Connect">
+                                    <color key="titleColor" red="0.020182291670000001" green="0.010203134839999999" blue="0.016202503060000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="connectButtonTapped:" destination="Iym-gq-5AH" eventType="touchUpInside" id="wNz-4r-hr9"/>
+                                    <segue destination="49e-Tb-3d3" kind="presentation" id="aeQ-hG-OgC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smartytrash" translatesAutoresizingMaskIntoConstraints="NO" id="c7a-Ue-6WR">
+                                <rect key="frame" x="113" y="204" width="137" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="mG7-0P-J8R"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="127" id="q45-Pm-Igk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50980392159999999" green="0.80000000000000004" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KbE-bN-CLr" firstAttribute="centerX" secondItem="yI3-DG-tGH" secondAttribute="centerX" id="2tE-Ef-NFn"/>
+                            <constraint firstItem="c7a-Ue-6WR" firstAttribute="leading" secondItem="trF-pW-zWl" secondAttribute="leading" constant="113" id="6Lb-e2-sgD"/>
+                            <constraint firstItem="f22-6F-Tiq" firstAttribute="top" secondItem="yI3-DG-tGH" secondAttribute="bottom" constant="17" id="DP6-p3-qi7"/>
+                            <constraint firstItem="f22-6F-Tiq" firstAttribute="leading" secondItem="trF-pW-zWl" secondAttribute="leading" constant="144" id="M5t-F1-fJl"/>
+                            <constraint firstItem="KbE-bN-CLr" firstAttribute="leading" secondItem="trF-pW-zWl" secondAttribute="leading" constant="45" id="Pzn-zY-1iE"/>
+                            <constraint firstItem="c7a-Ue-6WR" firstAttribute="top" secondItem="KbE-bN-CLr" secondAttribute="bottom" constant="22" id="Q1w-LB-RkK"/>
+                            <constraint firstItem="trF-pW-zWl" firstAttribute="trailing" secondItem="c7a-Ue-6WR" secondAttribute="trailing" constant="125" id="Qii-g4-SSi"/>
+                            <constraint firstItem="yI3-DG-tGH" firstAttribute="top" secondItem="c7a-Ue-6WR" secondAttribute="bottom" constant="44" id="W7j-Vh-nza"/>
+                            <constraint firstItem="yI3-DG-tGH" firstAttribute="leading" secondItem="trF-pW-zWl" secondAttribute="leading" constant="79" id="XdQ-e2-zjc"/>
+                            <constraint firstItem="KbE-bN-CLr" firstAttribute="top" secondItem="trF-pW-zWl" secondAttribute="top" constant="106" id="YZR-h0-XQx"/>
+                            <constraint firstItem="yI3-DG-tGH" firstAttribute="top" secondItem="c7a-Ue-6WR" secondAttribute="bottom" constant="44" id="lbn-nH-7Fg"/>
+                            <constraint firstItem="trF-pW-zWl" firstAttribute="trailing" secondItem="yI3-DG-tGH" secondAttribute="trailing" constant="80" id="o3Y-x9-qPN"/>
+                            <constraint firstItem="trF-pW-zWl" firstAttribute="trailing" secondItem="c7a-Ue-6WR" secondAttribute="trailing" constant="125" id="u0q-gZ-6gV"/>
+                            <constraint firstItem="c7a-Ue-6WR" firstAttribute="leading" secondItem="trF-pW-zWl" secondAttribute="leading" constant="113" id="wEQ-xG-WWK"/>
+                            <constraint firstItem="trF-pW-zWl" firstAttribute="bottom" secondItem="f22-6F-Tiq" secondAttribute="bottom" constant="211" id="woJ-R2-bN2"/>
+                            <constraint firstItem="trF-pW-zWl" firstAttribute="trailing" secondItem="f22-6F-Tiq" secondAttribute="trailing" constant="145" id="xNN-Xb-fDc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="trF-pW-zWl"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputHostAddress" destination="yI3-DG-tGH" id="4gS-75-AUR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ctM-ND-4V9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-797.60000000000002" y="1.3493253373313345"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="myTabBar" id="49e-Tb-3d3" customClass="MainTabBarController" customModule="SmartyTrashApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="NZQ-BW-2vc" kind="relationship" relationship="viewControllers" id="ZD3-k8-4vL"/>
+                        <segue destination="v54-b6-DuQ" kind="relationship" relationship="viewControllers" id="gxb-hr-aXr"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="vgH-4x-xAo"/>
+                        <segue destination="6sH-MN-K8P" kind="relationship" relationship="viewControllers" id="VcS-Ii-o0T"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="Rrf-Y9-lDQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NZQ-BW-2vc" customClass="HomeNavigationController" customModule="SmartyTrashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="7bD-bS-7le"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5AP-nX-cjw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fdb-C7-09v" kind="relationship" relationship="rootViewController" id="LGd-y3-bge"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DmZ-Ne-KhA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2468" y="-6.746626686656672"/>
+        </scene>
+        <!--Status-->
+        <scene sceneID="cko-eJ-8hQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v54-b6-DuQ" customClass="StatusNavigationController" customModule="SmartyTrashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Status" image="visible" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uHe-LD-2ph">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="SE7-OH-uZg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uHc-Rc-Pjj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+        </scene>
+        <!--Statistics-->
+        <scene sceneID="gzF-4i-QHc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6sH-MN-K8P" customClass="StatisticsNavigationController" customModule="SmartyTrashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Statistics" image="statistics" id="sPj-es-kfy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TpD-4C-0Nf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4Xt-ZF-AwN" kind="relationship" relationship="rootViewController" id="5Ud-Xu-8Ni"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dOG-b8-5aW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740" y="1026.8365817091455"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="about" width="30" height="30"/>
+        <image name="home" width="30" height="30"/>
+        <image name="smartytrash" width="266" height="266"/>
+        <image name="statistics" width="30" height="30"/>
+        <image name="visible" width="30" height="30"/>
     </resources>
 </document>
